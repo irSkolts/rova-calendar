@@ -72,15 +72,18 @@ def build_ics(items, reminder_hour):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    # The address can come from the environment so it never has to appear in this repository.
-    parser.add_argument("--postcode", default=os.environ.get("ROVA_POSTCODE"))
-    parser.add_argument("--number", default=os.environ.get("ROVA_HOUSENUMBER"))
-    parser.add_argument("--addition", default=os.environ.get("ROVA_ADDITION", ""))
+    # The address can come from ROVA_ADDRESS ("1234AB 5" or "1234AB 5 A") so it never has to
+    # appear in this repository. One combined value also keeps GitHub's secret masking from
+    # revealing a short house number by blanking out every matching digit in the logs.
+    env = (os.environ.get("ROVA_ADDRESS") or "").split()
+    parser.add_argument("--postcode", default=env[0] if len(env) > 0 else None)
+    parser.add_argument("--number", default=env[1] if len(env) > 1 else None)
+    parser.add_argument("--addition", default=env[2] if len(env) > 2 else "")
     parser.add_argument("--reminder-hour", type=int, default=19, help="hour on the evening before (0-23)")
     parser.add_argument("--out", default="docs/rova.ics")
     args = parser.parse_args()
     if not args.postcode or not args.number:
-        parser.error("give --postcode and --number, or set ROVA_POSTCODE and ROVA_HOUSENUMBER")
+        parser.error("give --postcode and --number, or set ROVA_ADDRESS")
 
     items = fetch(args.postcode, args.number, args.addition)
     if not items:

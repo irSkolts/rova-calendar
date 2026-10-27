@@ -22,18 +22,20 @@ Each collection day is an all-day event (GFT and PMD) with a reminder at 19:00 t
 python rova_calendar.py --postcode 1234AB --number 1
 ```
 
-| Option | Environment variable | Meaning |
-|---|---|---|
-| `--postcode` | `ROVA_POSTCODE` | Postcode (required) |
-| `--number` | `ROVA_HOUSENUMBER` | House number (required) |
-| `--addition` | `ROVA_ADDITION` | House number addition, e.g. `A` |
-| `--reminder-hour` | | Hour of the reminder on the evening before (default `19`) |
-| `--out` | | Output file (default `docs/rova.ics`) |
+| Option | Meaning |
+|---|---|
+| `--postcode` | Postcode (required) |
+| `--number` | House number (required) |
+| `--addition` | House number addition, e.g. `A` |
+| `--reminder-hour` | Hour of the reminder on the evening before (default `19`) |
+| `--out` | Output file (default `docs/rova.ics`) |
+
+Instead of `--postcode`, `--number` and `--addition` you can set the environment variable `ROVA_ADDRESS`, e.g. `ROVA_ADDRESS="1234AB 1"` or `"1234AB 1 A"`.
 
 ## Use it for your own address
 
 1. Fork this repository.
-2. Under Settings › Secrets and variables › Actions, add the repository secrets `ROVA_POSTCODE` and `ROVA_HOUSENUMBER` (and `ROVA_ADDITION` if you have one).
+2. Under Settings › Secrets and variables › Actions, add a repository secret `ROVA_ADDRESS` with your postcode and house number, e.g. `1234AB 1`. Keep it as one value: GitHub hides secrets in the public logs, and a separate short secret such as a house number would show up as `***` wherever that digit appears.
 3. Under Settings › Pages, publish the `docs/` folder of the `main` branch.
 4. Run the *Update calendar* workflow once from the *Actions* tab.
 
