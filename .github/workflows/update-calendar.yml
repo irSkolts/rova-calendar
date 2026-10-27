@@ -1,0 +1,26 @@
+name: Update calendar
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily, early morning
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 rova_calendar.py --out docs/rova.ics
+        env:
+          ROVA_POSTCODE: ${{ secrets.ROVA_POSTCODE }}
+          ROVA_HOUSENUMBER: ${{ secrets.ROVA_HOUSENUMBER }}
+          ROVA_ADDITION: ${{ secrets.ROVA_ADDITION }}
+      - name: Commit if the schedule changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898237+github-actions[bot]@users.noreply.github.com"
+          git add docs/rova.ics
+          git diff --cached --quiet || { git commit -m "Update Rova calendar"; git push; }

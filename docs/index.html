@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rova afvalkalender</title>
+<style>
+  :root { --bg: #f6f7f4; --fg: #1d2420; --muted: #5b6660; --accent: #2f7d4f; --card: #fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141815; --fg: #e8ece9; --muted: #9aa59f; --accent: #5cbf83; --card: #1d221f; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 32rem; margin: 0 auto; padding: 2.5rem 16px; }
+  h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
+  p { color: var(--muted); }
+  a.button { display: block; text-align: center; background: var(--accent); color: #fff; text-decoration: none;
+             padding: .9rem 1rem; border-radius: 12px; font-weight: 600; margin: 1.5rem 0 .75rem; }
+  code { display: block; background: var(--card); padding: .75rem; border-radius: 8px; word-break: break-all; font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rova afvalkalender</h1>
+  <p>Ophaaldagen voor GFT en PMD, dagelijks bijgewerkt vanuit Rova. Met een herinnering om 19:00 de avond ervoor.</p>
+  <a class="button" id="subscribe" href="rova.ics">Abonneer in Agenda</a>
+  <p>Of voeg handmatig toe via Instellingen › Agenda › Accounts › Voeg account toe › Andere › Voeg agenda-abonnement toe:</p>
+  <code id="url">rova.ics</code>
+</main>
+<script>
+  var base = location.host + location.pathname.replace(/[^/]*$/, '') + 'rova.ics';
+  document.getElementById('subscribe').href = 'webcal://' + base;
+  document.getElementById('url').textContent = 'https://' + base;
+</script>
+</body>
+</html>

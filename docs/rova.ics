@@ -1,0 +1,122 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//RovaCalendar//NL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rova afvalkalender
+X-WR-TIMEZONE:Europe/Amsterdam
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+X-PUBLISHED-TTL:P1D
+BEGIN:VEVENT
+UID:rova-20261028-gft@rovacalendar
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
+DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261105-pmd@rovacalendar
+DTSTAMP:20261105T000000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Rova: PMD (plastic\, blik\, drinkpakken) 🟠
+DESCRIPTION:Vandaag komen we bij je langs om jouw pmd op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: PMD (plastic\, blik\, drinkpakken) 🟠 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261111-gft@rovacalendar
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
+DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261125-gft@rovacalendar
+DTSTAMP:20261125T000000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
+DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261203-pmd@rovacalendar
+DTSTAMP:20261203T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Rova: PMD (plastic\, blik\, drinkpakken) 🟠
+DESCRIPTION:Vandaag komen we bij je langs om jouw pmd op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: PMD (plastic\, blik\, drinkpakken) 🟠 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261209-gft@rovacalendar
+DTSTAMP:20261209T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
+DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261223-gft@rovacalendar
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
+DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20261231-pmd@rovacalendar
+DTSTAMP:20261231T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Rova: PMD (plastic\, blik\, drinkpakken) 🟠
+DESCRIPTION:Vandaag komen we bij je langs om jouw pmd op te halen.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Rova: PMD (plastic\, blik\, drinkpakken) 🟠 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
