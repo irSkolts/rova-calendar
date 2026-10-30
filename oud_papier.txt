@@ -1,0 +1,6 @@
+# Oud papier wordt elke laatste zaterdag van de maand opgehaald.
+# Hieronder staan de afwijkingen van die regel:
+#   gewone zaterdag = verplaatste datum
+#   gewone zaterdag = -              (vervalt)
+
+2026-12-26 = 2026-12-23  # tweede kerstdag, verplaatst naar woensdag

@@ -8,12 +8,13 @@ A subscribable iPhone/Google/Outlook calendar with [Rova](https://www.rova.nl) w
 https://irskolts.github.io/rova-calendar/rova.ics
 ```
 
-Each collection day is an all-day event (GFT and PMD) with a reminder at 19:00 the evening before.
+Each collection day is an all-day event (GFT, PMD and oud papier) with a reminder at 19:00 the evening before.
 
 ## How it works
 
 - [`rova_calendar.py`](rova_calendar.py) fetches the upcoming collection days from Rova's waste calendar API and writes them to [`docs/rova.ics`](docs/rova.ics). It uses only the Python standard library.
 - A [GitHub Actions workflow](.github/workflows/update-calendar.yml) runs it every morning and commits the file only when the schedule changed. The address it looks up is stored as repository secrets, so it is not part of this repository.
+- Paper (oud papier) is not collected by Rova here but by local clubs, on the last Saturday of each month. With `--paper oud_papier.txt` the script adds those Saturdays for the coming year. [`oud_papier.txt`](oud_papier.txt) lists the dates that are moved or cancelled, as published in the local paper.
 - GitHub Pages serves the `docs/` folder, so subscribed calendars pick up new dates (such as next year's schedule) automatically.
 
 ## Run it locally
@@ -27,6 +28,7 @@ python rova_calendar.py --postcode 1234AB --number 1
 | `--postcode` | Postcode (required) |
 | `--number` | House number (required) |
 | `--addition` | House number addition, e.g. `A` |
+| `--paper` | File with changes to the last-Saturday paper collections; leave out to skip paper |
 | `--reminder-hour` | Hour of the reminder on the evening before (default `19`) |
 | `--out` | Output file (default `docs/rova.ics`) |
 
@@ -37,7 +39,8 @@ Instead of `--postcode`, `--number` and `--addition` you can set the environment
 1. Fork this repository.
 2. Under Settings › Secrets and variables › Actions, add a repository secret `ROVA_ADDRESS` with your postcode and house number, e.g. `1234AB 1`. Keep it as one value: GitHub hides secrets in the public logs, and a separate short secret such as a house number would show up as `***` wherever that digit appears.
 3. Under Settings › Pages, publish the `docs/` folder of the `main` branch.
-4. Run the *Update calendar* workflow once from the *Actions* tab.
+4. If paper is not collected on the last Saturday of the month where you live, remove `--paper oud_papier.txt` from the workflow.
+5. Run the *Update calendar* workflow once from the *Actions* tab.
 
 ## Notes
 

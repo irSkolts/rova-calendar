@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 rova_calendar.py --out docs/rova.ics
+      - run: python3 rova_calendar.py --paper oud_papier.txt --out docs/rova.ics
         env:
           ROVA_ADDRESS: ${{ secrets.ROVA_ADDRESS }}
       - name: Commit if the schedule changed
