@@ -8,16 +8,16 @@ X-WR-TIMEZONE:Europe/Amsterdam
 REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
-UID:rova-20261028-gft@rovacalendar
-DTSTAMP:20261028T000000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261029
-SUMMARY:Rova: GFT (groente\, fruit\, tuin) 🟢
-DESCRIPTION:Vandaag komen we bij je langs om jouw gft op te halen.
+UID:rova-20261031-oudpapier@rovacalendar
+DTSTAMP:20261031T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Rova: GFT (groente\, fruit\, tuin) 🟢 - container vanavond aan de weg zetten
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
 TRIGGER:-PT5H
 END:VALARM
 END:VEVENT
@@ -64,6 +64,20 @@ TRIGGER:-PT5H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:rova-20261128-oudpapier@rovacalendar
+DTSTAMP:20261128T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:rova-20261203-pmd@rovacalendar
 DTSTAMP:20261203T000000Z
 DTSTART;VALUE=DATE:20261203
@@ -106,6 +120,20 @@ TRIGGER:-PT5H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:rova-20261223-oudpapier@rovacalendar
+DTSTAMP:20261223T000000Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:rova-20261231-pmd@rovacalendar
 DTSTAMP:20261231T000000Z
 DTSTART;VALUE=DATE:20261231
@@ -116,6 +144,146 @@ TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Rova: PMD (plastic\, blik\, drinkpakken) 🟠 - container vanavond aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270130-oudpapier@rovacalendar
+DTSTAMP:20270130T000000Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270227-oudpapier@rovacalendar
+DTSTAMP:20270227T000000Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270327-oudpapier@rovacalendar
+DTSTAMP:20270327T000000Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270424-oudpapier@rovacalendar
+DTSTAMP:20270424T000000Z
+DTSTART;VALUE=DATE:20270424
+DTEND;VALUE=DATE:20270425
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270529-oudpapier@rovacalendar
+DTSTAMP:20270529T000000Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270626-oudpapier@rovacalendar
+DTSTAMP:20270626T000000Z
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270731-oudpapier@rovacalendar
+DTSTAMP:20270731T000000Z
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270828-oudpapier@rovacalendar
+DTSTAMP:20270828T000000Z
+DTSTART;VALUE=DATE:20270828
+DTEND;VALUE=DATE:20270829
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20270925-oudpapier@rovacalendar
+DTSTAMP:20270925T000000Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20270926
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
+TRIGGER:-PT5H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:rova-20271030-oudpapier@rovacalendar
+DTSTAMP:20271030T000000Z
+DTSTART;VALUE=DATE:20271030
+DTEND;VALUE=DATE:20271031
+SUMMARY:Oud papier 🔵
+DESCRIPTION:Oud papier vóór 8.00 uur aan de weg zetten\, in een doos of stevig dichtgebonden.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Oud papier 🔵 - morgen vóór 8.00 uur aan de weg zetten
 TRIGGER:-PT5H
 END:VALARM
 END:VEVENT
